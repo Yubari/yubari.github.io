@@ -117,7 +117,7 @@ article td + td {
 aside {
   overflow: hidden;
 }
-aside h2 {
+article h2 {
   max-width: 800px;
   margin: 16px auto;
   padding: 16px 8px 24px;
@@ -131,20 +131,20 @@ aside h2 {
   text-align: center;
 }
 @media (min-width: 480px) {
-  aside h2 {
+  article h2 {
     font-size: 1.25rem;
   }
-  aside h2::first-line {
+  article h2::first-line {
     letter-spacing: 1px;
   }
 }
 @media (min-width: 640px) {
-  aside h2 {
+  article h2 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 800px) {
-  aside h2 {
+  article h2 {
     font-size: 2rem;
   }
 }
