@@ -38,6 +38,73 @@ p {
   line-height: 1.5em;
 }
 
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  max-width: 800px;
+  margin: auto;
+  padding: 16px 8px 24px;
+
+  text-align: center;
+  font-size: 0;
+}
+ul li {
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding-top: 8px;
+
+  font-size: 0.875rem;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 16px;
+  border-right: 4px solid #e5e5e5;
+}
+ul li::first-line {
+  font-weight: 600;
+}
+
+ul li:before {
+  content: '';
+
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: -8px 12px 0 0;
+
+  border-radius: 50%;
+  background: url('../img/icons.png') 0 0 no-repeat;
+}
+ul li:nth-child(2):before {
+  background-position: -64px 0;
+}
+ul li:nth-child(3):before {
+  background-position: -128px 0;
+}
+@media (min-width: 800px) {
+  ul li {
+    display: inline-block;
+    border-right: 0;
+  }
+  ul li:nth-child(1) {
+    width: 32%;
+  }
+  ul li:nth-child(2) {
+    width: 40%;
+  }
+  ul li:nth-child(3) {
+    width: 28%;
+  }
+}
+
 header {
   overflow: hidden;
   position: relative;
