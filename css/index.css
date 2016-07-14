@@ -180,6 +180,7 @@ article tr:nth-child(even) td {
 article th + th,
 article td + td {
   width: 20%;
+  min-width: 104px;
   text-align: right;
   vertical-align: top;
 }
